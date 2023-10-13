@@ -23,60 +23,95 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form1))
-        Button1 = New Button()
-        Button2 = New Button()
-        Button3 = New Button()
+        Label1 = New Label()
+        Label2 = New Label()
+        Label3 = New Label()
+        txtusuario = New TextBox()
+        txtcontraseña = New TextBox()
+        btningresar = New Button()
         SuspendLayout()
         ' 
-        ' Button1
+        ' Label1
         ' 
-        Button1.Font = New Font("Segoe Print", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Button1.ForeColor = Color.Teal
-        Button1.Location = New Point(347, 48)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(98, 35)
-        Button1.TabIndex = 0
-        Button1.Text = "Estefany"
-        Button1.UseVisualStyleBackColor = True
+        Label1.AutoSize = True
+        Label1.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
+        Label1.Font = New Font("Segoe UI Emoji", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Label1.Location = New Point(347, 27)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(68, 26)
+        Label1.TabIndex = 0
+        Label1.Text = "acesso"
         ' 
-        ' Button2
+        ' Label2
         ' 
-        Button2.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        Button2.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point)
-        Button2.Location = New Point(347, 98)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(98, 34)
-        Button2.TabIndex = 1
-        Button2.Text = "stefany"
-        Button2.UseVisualStyleBackColor = False
+        Label2.AutoSize = True
+        Label2.BackColor = Color.Red
+        Label2.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Label2.Location = New Point(172, 105)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(72, 24)
+        Label2.TabIndex = 1
+        Label2.Text = "usuario"
         ' 
-        ' Button3
+        ' Label3
         ' 
-        Button3.Font = New Font("Showcard Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        Button3.ForeColor = Color.Red
-        Button3.Location = New Point(347, 160)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(113, 36)
-        Button3.TabIndex = 2
-        Button3.Text = "holi profe"
-        Button3.UseVisualStyleBackColor = True
+        Label3.AutoSize = True
+        Label3.BackColor = Color.Red
+        Label3.Font = New Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Label3.Location = New Point(160, 182)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(105, 25)
+        Label3.TabIndex = 2
+        Label3.Text = "contraseña"
+        ' 
+        ' txtusuario
+        ' 
+        txtusuario.Location = New Point(347, 109)
+        txtusuario.Name = "txtusuario"
+        txtusuario.Size = New Size(100, 23)
+        txtusuario.TabIndex = 3
+        ' 
+        ' txtcontraseña
+        ' 
+        txtcontraseña.Location = New Point(347, 187)
+        txtcontraseña.Name = "txtcontraseña"
+        txtcontraseña.PasswordChar = "*"c
+        txtcontraseña.Size = New Size(100, 23)
+        txtcontraseña.TabIndex = 4
+        ' 
+        ' btningresar
+        ' 
+        btningresar.BackColor = SystemColors.AppWorkspace
+        btningresar.Location = New Point(531, 122)
+        btningresar.Name = "btningresar"
+        btningresar.Size = New Size(117, 70)
+        btningresar.TabIndex = 5
+        btningresar.Text = "ingresar"
+        btningresar.UseVisualStyleBackColor = False
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.Violet
+        BackColor = SystemColors.ActiveCaption
         ClientSize = New Size(800, 450)
-        Controls.Add(Button3)
-        Controls.Add(Button2)
-        Controls.Add(Button1)
+        Controls.Add(btningresar)
+        Controls.Add(txtcontraseña)
+        Controls.Add(txtusuario)
+        Controls.Add(Label3)
+        Controls.Add(Label2)
+        Controls.Add(Label1)
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "Form1"
         Text = "Form1"
         ResumeLayout(False)
+        PerformLayout()
     End Sub
 
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents txtusuario As TextBox
+    Friend WithEvents txtcontraseña As TextBox
+    Friend WithEvents btningresar As Button
 End Class
