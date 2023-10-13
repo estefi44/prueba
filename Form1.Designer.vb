@@ -25,6 +25,7 @@ Partial Class Form1
         Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form1))
         Button1 = New Button()
         Button2 = New Button()
+        Button3 = New Button()
         SuspendLayout()
         ' 
         ' Button1
@@ -49,12 +50,24 @@ Partial Class Form1
         Button2.Text = "stefany"
         Button2.UseVisualStyleBackColor = False
         ' 
+        ' Button3
+        ' 
+        Button3.Font = New Font("Showcard Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        Button3.ForeColor = Color.Red
+        Button3.Location = New Point(347, 160)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(113, 36)
+        Button3.TabIndex = 2
+        Button3.Text = "holi profe"
+        Button3.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.Violet
         ClientSize = New Size(800, 450)
+        Controls.Add(Button3)
         Controls.Add(Button2)
         Controls.Add(Button1)
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
@@ -65,4 +78,5 @@ Partial Class Form1
 
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
 End Class
